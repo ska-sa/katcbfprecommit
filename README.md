@@ -1,5 +1,5 @@
 # Python pre-commit Workflow
-A Python, pre-commit workflow for auto-formatting code and checking for inconsistencies in style, design and complexity according to [PEP8]([https://www.python.org/dev/peps/pep-0008/](https://www.python.org/dev/peps/pep-0008/)) guidelines. It also checks for compliance with Python docstring conventions [PEP257](https://www.python.org/dev/peps/pep-0257/).
+A Python, pre-commit workflow for auto-formatting code and checking for inconsistencies in style, design and complexity according to [PEP8]([https://www.python.org/dev/peps/pep-0008/](https://www.python.org/dev/peps/pep-0008/)) guidelines. It also checks for compliance with Python docstring conventions [PEP257](https://www.python.org/dev/peps/pep-0257/) and supports [mypy](https://mypy.readthedocs.io/en/stable/index.html) type checking if static typing is used.
 
 The workflow runs whenever Python code is to be committed to a git repository using `git commit`.
 
@@ -11,7 +11,7 @@ To configure your project to use this automated Python workflow, copy the three 
 * `.flake8`  - configuration for _[flake8](https://flake8.pycqa.org/en/latest/)_. A tool for enforcing PEP8-based style guide for Python.
 
 ## Install Prerequisites
-Although _black_, _flake8_ and _[pydocstyle](http://www.pydocstyle.org/en/5.0.2/index.html)_ are used, the only prerequisite is _**pre-commit**_ as the configuration file is set up so that when the pre-commit hooks are installed, all dependencies are automatically installed.
+Although _black_, _flake8_, _mypy_ and _[pydocstyle](http://www.pydocstyle.org/en/5.0.2/index.html)_ are used, the only prerequisite is _**pre-commit**_ as the configuration file is set up so that when the pre-commit hooks are installed, all dependencies are automatically installed.
 
 _pre-commit_ is a framework for managing git hooks.
 
